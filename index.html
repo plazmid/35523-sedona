@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+	<head>
+ 		<meta charset="utf-8">
+  	<title>СЕДОНА</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+  	<header class="main-header">
+  		<h1 class="visually-hidden">Штат Седона</h1>
+  		<nav class="navigation-menu">
+  			<div class="logo">
+  				<img src="#" alt="Лого штата Sedona" width="" height="">
+  			</div>
+  			<ul class="navigation-menu-list">
+  				<li><a href="#">Информация</a></li>
+  				<li><a href="#">Фото и видео</a></li>
+  				<li><a href="#">Карта штата</a></li>
+  				<li><a href="#">Гостиницы</a></li>
+  			</ul>
+  		</nav>
+  		<span class="slogan-1">Welcome</span><br>
+  		<span class="slogan-2">- to the gorgeus -</span><br>
+  		<span class="slogan-3">Sedona</span><br>
+  		<span class="slogan-4">"Because the Grand Canyon sucks!"</span>
+  	</header>
+  	
+  	<main class="container">
+  		<b class="slogan-5">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</b>
+  		<h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+  		
+  		<ul class="advantages">
+  			<li class="advantages-item-blue">
+  				<h3 class="advantages-item-title-blue">Настоящий городок</h3>
+  				<p class="advantages-item-number-blue">- №1 -</p>
+  				<p class="advantages-item-text-blue">Седона - не аттракцион для туристов,<br> там течёт своя жизнь</p>
+  				<img class="advantages-item-img-blue" src="#" alt="Настоящий городок" width="" height="">
+  					<ul class="advantages-subitems">
+  						<li class="advantages-subitem-1">
+  							<h4 class="advantages-subitem-1-title">Жильё</h4>
+  							<p class="advantages-subitem-1-text">Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
+  						</li>
+  						<li class="advantages-subitem-2">
+  							<h4 class="advantages-subitem-2-title">Еда</h4>
+  							<p class="advantages-subitem-2-text">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+  						</li>
+  						<li class="advantages-subitem-3">
+  							<h4 class="advantages-subitem-3-title">Сувениры</h4>
+  							<p class="advantages-subitem-3-text">Не только китайского, но и местного<br>производства!</p>
+  						</li>
+  					</ul>
+  			</li>
+  			<li class="advantages-item-blue">
+  				<h3 class="advantages-item-title-blue">Там есть<br> мост дьявола</h3>
+  				<p class="advantages-item-number-blue">- №2 -</p>
+  				<p class="advantages-item-text-blue">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+  				<img class="advantages-item-img-blue" src="#" alt="Мост дьявола" width="" height="">
+  			</li>
+  			<li class="advantages-item">
+  				<h3 class="advantages-item-title">Небольшая<br> площадь</h3>
+  				<p class="advantages-item-number">- №3 -</p>
+  				<p class="advantages-item-text">Все достопримечательности<br> находятся очень близко</p>
+  			</li>
+  			<li class="advantages-item">
+  				<h3 class="advantages-item-title">Красивая<br> дорога</h3>
+  				<p class="advantages-item-number">- №4 -</p>
+  				<p class="advantages-item-text">Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+  			</li>
+  			<li class="advantages-item">
+  				<h3 class="advantages-item-title">Мало<br> туристов</h3>
+  				<p class="advantages-item-number">- №5 -</p>
+  				<p class="advantages-item-text">Большинство едет в Гранд Каньон и<br> толпится там</p>
+  			</li>
+  		</ul>
+  		
+  		<section class="feedback">
+  			<h2 class="feedback-title">Заинтересовались?</h2>
+  			<p class="feedback-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+  				<div class="feedback-form">
+  					<form action="feedback-form" method="get">
+  						<h3 class="feedback-form-title">Поиск гостиницы в Седоне</h3>
+  						<label class="feedback-form-field-name" for="arrival-date-field">Дата заезда:</label>
+  						<input type="date" name="arrival-date" id="arrival-date-field" value="24 Апреля 2017">
+  						<br>
+  						<label class="feedback-form-field-name" for="departure-date-field">Дата выезда:</label>
+  						<input type="date" name="departure-date" id="departure-date-field" value="4 Июля 2017">
+  						<br>
+  						<label class="feedback-form-field-name" for="number-of-adults-field">Взрослые:</label>
+  						<input type="number" name="number-of-adults" id="number-of-adults-field" value="2">
+  						<br>
+  						<label class="feedback-form-field-name" for="number-of-children-field">Дети:</label>
+  						<input type="number" name="number-of-children" id="number-of-children-field" value="0">
+  						<br>
+  						<input class="find-btn" type="submit" value="Найти">
+  					</form>
+  				</div>
+  				<div class="map"></div>
+  		</section>
+  	</main>
+  	
+  	<footer class="footer-main">
+  		<h2 class="visually-hidden">Контакты</h2>
+  			<div class="footer-left">
+  				<a href="#">#VISITSEDONA</a>
+  			</div>
+  			<div class="footer-center">
+  				<a class="footer-center-social" href="#">Твиттер</a>
+  				<a class="footer-center-social" href="#">Фейсбук</a>
+  				<a class="footer-center-social" href="#">Ютуб</a>
+  			</div>
+  			<div class="footer-right">
+  				<span>WEBSITE BY</span>
+  				<a class="footer-right-academy" href="https://htmlacademy.ru/">HTML Academy</a>
+  			</div>
+  	</footer>
+  	
+ </body>
 </html>
